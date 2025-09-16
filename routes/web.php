@@ -57,3 +57,14 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(fun
     Route::patch('orders/{order}/status', [AdminOrderController::class, 'updateStatus'])->name('orders.status');
 });
 
+// Add this to routes/web.php after Auth::routes();
+
+Route::get('/home', function () {
+    if (auth()->check()) {
+        if (auth()->user()->role === 'admin') {
+            return redirect()->route('admin.dashboard');
+        }
+        return redirect()->route('dashboard');
+    }
+    return redirect()->route('home');
+})->name('home.redirect');
