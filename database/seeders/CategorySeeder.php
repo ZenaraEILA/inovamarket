@@ -11,29 +11,21 @@ class CategorySeeder extends Seeder
     {
         $categories = [
             [
-                'name' => 'Kerajinan Tangan',
-                'description' => 'Produk kerajinan tangan buatan siswa seperti tas, dompet, aksesoris'
+                'name' => 'Alat Tulis',
+                'description' => 'Berbagai alat tulis yang dibutuhkan siswa di sekolah seperti pensil, pulpen, penghapus, dll.'
             ],
             [
                 'name' => 'Makanan & Minuman',
-                'description' => 'Makanan dan minuman homemade karya siswa'
+                'description' => 'Makanan dan minuman yang dijual di sekolah, termasuk cemilan dan minuman segar.'
             ],
             [
-                'name' => 'Teknologi',
-                'description' => 'Produk teknologi dan aplikasi buatan siswa'
+                'name' => 'LKS',
+                'description' => 'Lembar Kerja Siswa (LKS) dan buku pelajaran yang digunakan di sekolah.'
             ],
             [
-                'name' => 'Seni & Desain',
-                'description' => 'Karya seni, lukisan, dan desain grafis siswa'
+                'name' => 'Seragam',
+                'description' => 'Seragam sekolah dan atribut pendukung seperti dasi, topi, dan sepatu.'
             ],
-            [
-                'name' => 'Jasa',
-                'description' => 'Layanan jasa yang ditawarkan siswa seperti les privat, design, dll'
-            ],
-            [
-                'name' => 'Fashion',
-                'description' => 'Produk fashion dan aksesoris buatan siswa'
-            ]
         ];
 
         foreach ($categories as $category) {

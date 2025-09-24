@@ -45,4 +45,19 @@ class User extends Authenticatable
     {
         return $this->role === 'user';
     }
+
+    public function settings()
+    {
+        return $this->hasOne(UserSetting::class);
+    }
+
+    public function paymentMethods()
+    {
+        return $this->hasMany(PaymentMethod::class);
+    }
+
+    public function primaryPaymentMethod()
+    {
+        return $this->hasOne(PaymentMethod::class)->where('is_primary', true);
+    }
 }

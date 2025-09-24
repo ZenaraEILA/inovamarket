@@ -14,16 +14,16 @@ class UserSeeder extends Seeder
         User::create([
             'name' => 'Admin InovaMarket',
             'email' => 'admin@inovamarket.com',
-            'password' => Hash::make('password'),
+            'password' => Hash::make('password'), // password: password
             'role' => 'admin',
             'phone' => '081234567890',
         ]);
 
         // Regular users
         User::create([
-            'name' => 'User Demo',
+            'name' => 'User  Demo',
             'email' => 'user@inovamarket.com',
-            'password' => Hash::make('password'),
+            'password' => Hash::make('password'), // password: password
             'role' => 'user',
             'phone' => '081234567891',
         ]);
@@ -31,7 +31,7 @@ class UserSeeder extends Seeder
         User::create([
             'name' => 'Budi Santoso',
             'email' => 'budi@example.com',
-            'password' => Hash::make('password'),
+            'password' => Hash::make('password'), // password: password
             'role' => 'user',
             'phone' => '081234567892',
         ]);
@@ -39,7 +39,7 @@ class UserSeeder extends Seeder
         User::create([
             'name' => 'Siti Aminah',
             'email' => 'siti@example.com',
-            'password' => Hash::make('password'),
+            'password' => Hash::make('password'), // password: password
             'role' => 'user',
             'phone' => '081234567893',
         ]);
